@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
+            "title": "Python Hello World",
             "content": "print(&quot;Hello World&quot;) . Hello World .",
-            "url": "https://slimeyturtles.github.io/VSCODE/2022/08/28/helloWorldPy.html",
-            "relUrl": "/2022/08/28/helloWorldPy.html",
+            "url": "https://slimeyturtles.github.io/VSCODE/week0/hello-world-Python",
+            "relUrl": "/week0/hello-world-Python",
             "date": " • Aug 28, 2022"
         }
         
@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
+            "title": "Java Hello World",
             "content": "static class Main { public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } Main.main(null); . Hello World! .",
-            "url": "https://slimeyturtles.github.io/VSCODE/2022/08/28/helloWorldJava.html",
-            "relUrl": "/2022/08/28/helloWorldJava.html",
+            "url": "https://slimeyturtles.github.io/VSCODE/week0/hello-world-Java",
+            "relUrl": "/week0/hello-world-Java",
             "date": " • Aug 28, 2022"
         }
         
@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Title",
-            "content": "",
-            "url": "https://slimeyturtles.github.io/VSCODE/2020/08/28/toolSetup.html",
-            "relUrl": "/2020/08/28/toolSetup.html",
+            "title": "Week 0",
+            "content": "-[x] Link to personal fastpages -[x] Link to new post -[x] Hello World Python -[x] Hello World Java -[x] SC of Fastpages on IDE -[x] GitHub Insights .",
+            "url": "https://slimeyturtles.github.io/VSCODE/week0",
+            "relUrl": "/week0",
             "date": " • Aug 28, 2020"
         }
         
