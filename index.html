@@ -4,12 +4,29 @@ search_exclude: true
 image: images/logo.png
 ---
 
-This site is built with [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
+{% set weeks = 2 %}
 
-![]({{site.baseurl}}/images/diagram.png "https://github.com/fastai/fastpages")
+Avinhs website ❌🧢
 
-[fastpages](https://github.com/fastai/fastpages) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).  
-
-You can edit the `index.html` file to change this content.
+<table>
+    <tr>
+        <th>Week</th>
+        <th>link</th>
+    </tr>
+    <tr>
+    {% for week in range(weeks) %}
+        <th>{{Week}}</th>
+        <th>
+            {% for post in site.categories['week'+{{Week}}] %}
+                {% if post.hide != true %}
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <article class="archive-item">
+                <p class="post-meta post-meta-title"><a class="page-meta" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
+                </article>
+                {% endif %}
+            {% endfor %}
+        </th>
+    </tr>
+</table>
 
 # Posts
