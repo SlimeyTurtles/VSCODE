@@ -4,29 +4,9 @@ search_exclude: true
 image: images/logo.png
 ---
 
-{% set weeks = 2 %}
 
 Avinhs website ❌🧢
 
-<table>
-    <tr>
-        <th>Week</th>
-        <th>link</th>
-    </tr>
-    <tr>
-    {% for week in range(weeks) %}
-        <th>{{Week}}</th>
-        <th>
-            {% for post in site.categories['week'+{{Week}}] %}
-                {% if post.hide != true %}
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <article class="archive-item">
-                <p class="post-meta post-meta-title"><a class="page-meta" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
-                </article>
-                {% endif %}
-            {% endfor %}
-        </th>
-    </tr>
-</table>
+
 
 # Posts
