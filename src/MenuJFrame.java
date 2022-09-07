@@ -20,6 +20,7 @@ public class MenuJFrame extends JFrame implements ActionListener {
     // Constructor enables the Frame instance, the object "this.frame"
     public MenuJFrame(String title) {
 	    // Initializing Key Objects
+        System.setProperty("java.awt.headless", "true");
         frame = new JFrame(title);
 	    menubar = new JMenuBar();
 	    menu = new JMenu("Menu");
