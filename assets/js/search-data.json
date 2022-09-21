@@ -2,6 +2,39 @@
   
     
         "post0": {
+            "title": "Title",
+            "content": "",
+            "url": "https://slimeyturtles.github.io/VSCODE/2022/09/20/PBL5.3ProgramDesign.html",
+            "relUrl": "/2022/09/20/PBL5.3ProgramDesign.html",
+            "date": " • Sep 20, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Title",
+            "content": "",
+            "url": "https://slimeyturtles.github.io/VSCODE/2022/09/20/PBL5.2JavaScript.html",
+            "relUrl": "/2022/09/20/PBL5.2JavaScript.html",
+            "date": " • Sep 20, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
+            "title": "Title",
+            "content": "",
+            "url": "https://slimeyturtles.github.io/VSCODE/2022/09/20/PBL5.1Fibonacci.html",
+            "relUrl": "/2022/09/20/PBL5.1Fibonacci.html",
+            "date": " • Sep 20, 2022"
+        }
+        
+    
+  
+    
+        ,"post3": {
             "title": "4.5 Agile Methodology",
             "content": "",
             "url": "https://slimeyturtles.github.io/VSCODE/week4/5",
@@ -12,7 +45,7 @@
     
   
     
-        ,"post1": {
+        ,"post4": {
             "title": "4.4 Java Spring Backend",
             "content": "",
             "url": "https://slimeyturtles.github.io/VSCODE/week4/4",
@@ -23,7 +56,7 @@
     
   
     
-        ,"post2": {
+        ,"post5": {
             "title": "4.3 Java Spring/Thymeleaf",
             "content": "",
             "url": "https://slimeyturtles.github.io/VSCODE/week4/3",
@@ -34,7 +67,7 @@
     
   
     
-        ,"post3": {
+        ,"post6": {
             "title": "4.2 Iteration with 2D Arrays",
             "content": "Print monkeys hotizontally . /* * Creator: Nighthawk Coding Society * Mini Lab Name: Hello Series,featuring Monkey Jumpers */ /** * Class for Monkeys: a 2D array of Monkeys * As well as method to print the Poem */ class MonkeyLoop { //The area between class definition and the 1st method is where we keep data for object in Java String [][] monkeys; //2D Array: AP CSA Unit 8: 2D array of strings //2D array is like a grid [x][y] // or like a spreadsheet [row][column] /** * Constructor initializes a 2D array of Monkeys */ public MonkeyLoop() { //Storing Data in 2D arrays monkeys = new String[][]{ //2D array above is just a name, &quot;new&quot; makes a container (&quot;object&quot;) //Monkey 0 { &quot;ʕง ͠° ͟ل͜ ͡°)ʔ &quot;, //[0][0] eyes &quot; _⏄_/ &quot;, //[0][1] chin &quot; --0-- &quot;, //[0][2] body &quot; ⎛ ⎞ &quot; //[0][3] legs }, //Monkey 1 { &quot; ʕ༼ ◕_◕ ༽ʔ&quot;, //[1][0] &quot; _⎏_/ &quot;, &quot; ++1++ &quot;, &quot; ⌋ ⌊ &quot; }, //Monkey 2 { &quot; ʕ(▀ ⍡ ▀)ʔ&quot;, //[2][0] &quot; _⎐_/ &quot;, &quot; &lt;-2-&gt; &quot;, &quot; 〈 〉 &quot; }, //Monkey 3 { &quot;ʕ ͡° ͜ʖ ° ͡ʔ&quot;, //[3][0] &quot; _⍾_/ &quot;, &quot; ==3== &quot;, &quot; _/ _ &quot; }, //Monkey 4 { &quot; (◕‿◕✿) &quot;, //[4][0] &quot; _⍾_/ &quot;, //[4][1] &quot; ==4== &quot;, //[4][2] &quot; _/ _ &quot; //[4][3] }, }; } /** * Loop and print monkeys in array * ... repeat until you reach zero ... */ public void printPoem() { //begin the poem System.out.println(); System.out.println(&quot;Monkey Jumpers Poem in Java Loopy&quot;); // monkeys (non-primitive) defined in constructor knows its length int monkeyCount = monkeys.length; for (int i = monkeyCount; i &gt;= 1; i--) //loops through 2D array length backwards { //this print statement shows current count of Monkeys // concatenation (+) of the loop variable and string to form a countdown message System.out.println(i + &quot; little monkeys jumping on the bed...&quot;); //how many separate parts are there in a monkey monkey? for (int row = 0; row &lt; i; row++) { //cycles through &quot;cells&quot; of 2d array /*cycles through columns to print each monkey part by part, will eventually print entire column*/ for (int col = 0; col &lt; monkeys.length; col++) { // prints specific part of the monkey from the column System.out.print(monkeys[col][row] + &quot; &quot;); } //this new line gives separation between stanza of poem System.out.println(); } //countdown for poem, decrementing monkeyCount variable by 1 monkeyCount -= 1; } //out of all the loops, prints finishing messages System.out.println(&quot;No more monkeys jumping on the bed&quot;); System.out.println(&quot;0000000000000000000000000000000000&quot;); System.out.println(&quot; THE END &quot;); } /** * A Java Driver/Test method that is the entry point for execution */ public static void main(String[] args) { new MonkeyLoop().printPoem(); //a new monkey list and output in one step } } MonkeyLoop.main(null); . Monkey Jumpers Poem in Java Loopy 5 little monkeys jumping on the bed... ʕง ͠° ͟ل͜ ͡°)ʔ ʕ༼ ◕_◕ ༽ʔ ʕ(▀ ⍡ ▀)ʔ ʕ ͡° ͜ʖ ° ͡ʔ (◕‿◕✿) _⏄_/ _⎏_/ _⎐_/ _⍾_/ _⍾_/ --0-- ++1++ &lt;-2-&gt; ==3== ==4== ⎛ ⎞ ⌋ ⌊ 〈 〉 _/ _ _/ _ . java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4 at MonkeyLoop.printPoem(#12:87) at MonkeyLoop.main(#12:108) at .(#15:1) . Build the entire rhyme for monkey jumpers . Give the monkeys names/properties . Make again with objects . How else can you call 2D Arrays .",
             "url": "https://slimeyturtles.github.io/VSCODE/week4/2",
@@ -45,7 +78,7 @@
     
   
     
-        ,"post4": {
+        ,"post7": {
             "title": "4.1 Free Response Question 1",
             "content": "",
             "url": "https://slimeyturtles.github.io/VSCODE/week4/1",
@@ -56,7 +89,7 @@
     
   
     
-        ,"post5": {
+        ,"post8": {
             "title": "Avinh Week 4 Overview (2.5/3)",
             "content": "FRQ Qestion . Iteration Mini-Lab .",
             "url": "https://slimeyturtles.github.io/VSCODE/week4/0",
@@ -67,7 +100,7 @@
     
   
     
-        ,"post6": {
+        ,"post9": {
             "title": "3.5 Local Host",
             "content": ".",
             "url": "https://slimeyturtles.github.io/VSCODE/week3/5",
@@ -78,7 +111,7 @@
     
   
     
-        ,"post7": {
+        ,"post10": {
             "title": "3.4 Deployment with AWS",
             "content": "not done. theres a server running on aws and i have docker but i cant set up DNS/nginx .",
             "url": "https://slimeyturtles.github.io/VSCODE/week3/4",
@@ -89,7 +122,7 @@
     
   
     
-        ,"post8": {
+        ,"post11": {
             "title": "3.3 Focus and Habits",
             "content": ". heres a list of various projects i want to work on or currently am | i write down ALL of my ideas no matter how dumb or infeasible | . . its like blogging but ive been doing it before i knew jupyternbs | this method is good because i get feedback from my friends | they tell me a lot i cant do things but they cant set the limits of what i can or cant do | .",
             "url": "https://slimeyturtles.github.io/VSCODE/week3/3",
@@ -100,7 +133,7 @@
     
   
     
-        ,"post9": {
+        ,"post12": {
             "title": "3.2 Iteration in Spring Boot",
             "content": "I dont know what this is .",
             "url": "https://slimeyturtles.github.io/VSCODE/week3/2",
@@ -111,7 +144,7 @@
     
   
     
-        ,"post10": {
+        ,"post13": {
             "title": "3.1 Iteration minilab",
             "content": "Explain if, if-else, and if-elseif-else. . if: runs code if a condition is true | . boolean condition = true; if (condition) { System.out.println(&quot;Condition is true&quot;); } . Condition is true . if-else: runs code if a condition is true, but if not, it will run different code | . boolean condition = false; if (condition) { System.out.println(&quot;Condition is true&quot;); } else { System.out.println(&quot;Condition is not true&quot;); } . if-elseif-else: runs code if a condition is true, if not it does something else. Checks another condition if it were true, and again does something different if it is not. | . boolean conditionA = true; boolean conditionB = false; if (conditionA) { System.out.println(&quot;Condition A is true&quot;); } else { System.out.println(&quot;Condition A is not true&quot;); } if (conditionB) { System.out.println(&quot;Condition B is true&quot;); } else { System.out.println(&quot;Condition B is not true&quot;); } . Condition A is true Condition B is not true . Create and if-elseif-elseif-elsif-else statement, 5 or more conditions. . int val = 3; // declares the value if (val == 0) { // checks if value is 0 System.out.println(&quot;Val: 0&quot;); // prints value is 0 if it is true } else if (val == 1) { // if not check if value is 1 System.out.println(&quot;Val: 1&quot;); // prints value is 1 if it is true } else if (val == 2) { // if not check if value is 2 System.out.println(&quot;Val: 2&quot;); // etc } else if (val == 3) { // etc System.out.println(&quot;Val: 3&quot;); } else if (val == 4) { System.out.println(&quot;Val: 4&quot;); } . Val: 3 . Covert the 5 or more decisions to a switch-case-case-case-case-otherwise. . int val = 3; // declares the value switch (val) { // declares the switch-case and the variable being tested is &#39;val&#39; case 0: // if val is 0... System.out.println(&quot;Val: 0&quot;); // print &quot;Val: 0&quot; break; // leaves the code block (same thing a closing curly bracket does) case 1: // if val is 1... System.out.println(&quot;Val: 1&quot;); // print &quot;Val: 1&quot; break; // leaves the code block case 2: System.out.println(&quot;Val: 2&quot;); break; case 3: System.out.println(&quot;Val: 3&quot;); break; case 4: System.out.println(&quot;Val: 4&quot;); break; } . Val: 3 . Describe De Morgan&#39;s law . not(A and B) = not A or not B | not(A or B) = not A and not B | the inverse of a function is equivalent to the same function with all variables being negative, and all ands/ors being switched | . Illustrate De Morgan&#39;s law . boolean a = true; boolean b = false; if (a || b) { // function 1 System.out.println(&quot;function 1 passed&quot;); } if (!(!a &amp;&amp; !b)) { // De Morgan function 1 System.out.println(&quot;De Morgan function 1 passed&quot;); } . function 1 passed De Morgan function 1 passed function 2 passed De Morgan function 2 passed function 3 passed De Morgan function 3 passed . Show some code running that shows understanding . boolean a = true; boolean b = false; if (!(a &amp;&amp; b) || (b || b)) { // function 2 System.out.println(&quot;function 2 passed&quot;); } if (!(!(!a || !b) &amp;&amp; (!b &amp;&amp; !b))) { // De Morgan function 2 System.out.println(&quot;De Morgan function 2 passed&quot;); } . function 2 passed De Morgan function 2 passed .",
             "url": "https://slimeyturtles.github.io/VSCODE/week3/1",
@@ -122,7 +155,7 @@
     
   
     
-        ,"post11": {
+        ,"post14": {
             "title": "Avinh Week 3 Overview (2.5/3)",
             "content": "MyConnect Requirements . Iteration Mini-lab | Iteration in Spring Boot? | Focus/Habits | Deployment on AWS | Local Host |",
             "url": "https://slimeyturtles.github.io/VSCODE/week3/0",
@@ -133,7 +166,7 @@
     
   
     
-        ,"post12": {
+        ,"post15": {
             "title": "2.5 Front End",
             "content": "Unfortunately the link to the assignment is now gone, so well never know what it said .",
             "url": "https://slimeyturtles.github.io/VSCODE/week2/5",
@@ -144,7 +177,7 @@
     
   
     
-        ,"post13": {
+        ,"post16": {
             "title": "2.4 Code.org",
             "content": "",
             "url": "https://slimeyturtles.github.io/VSCODE/week2/4",
@@ -155,7 +188,7 @@
     
   
     
-        ,"post14": {
+        ,"post17": {
             "title": "2.3 Using Objects",
             "content": "",
             "url": "https://slimeyturtles.github.io/VSCODE/week2/3",
@@ -166,7 +199,7 @@
     
   
     
-        ,"post15": {
+        ,"post18": {
             "title": "2.2 Anthony and Sahil CS Reflections",
             "content": "",
             "url": "https://slimeyturtles.github.io/VSCODE/week2/2",
@@ -177,7 +210,7 @@
     
   
     
-        ,"post16": {
+        ,"post19": {
             "title": "2.1 Innovation Part 2",
             "content": "Unfortunately the link to the assignment is now gone, so well never know what it said .",
             "url": "https://slimeyturtles.github.io/VSCODE/week2/1",
@@ -188,7 +221,7 @@
     
   
     
-        ,"post17": {
+        ,"post20": {
             "title": "Week 2 Overview (2.7/3)",
             "content": "",
             "url": "https://slimeyturtles.github.io/VSCODE/week2/0",
@@ -199,7 +232,7 @@
     
   
     
-        ,"post18": {
+        ,"post21": {
             "title": "1.5 Fastpages",
             "content": "Notes . _notebooks is for ipynb | _posts is for .md and front end | _word is for .docx XDDD | home page is index.html | _pages is for navbar | _config.yml is same as config for old gh pages | . Hacks . add _pages/notes.md: no i want to use my pages for other things and ill have my notes in the jupyter notebooks | add some personal study or work pages: ive already added a page for every hack I think thats good enough and ive created an organization system for my jupyter notebooks | .",
             "url": "https://slimeyturtles.github.io/VSCODE/week1/5",
@@ -210,7 +243,7 @@
     
   
     
-        ,"post19": {
+        ,"post22": {
             "title": "1.4 Bash and Check",
             "content": "Hacks . Is there anything we use to verify tools we install? | . yes, you can attempt to redownload a tool, or check its version. . python --version sudo apt install python3 . Python 3.9.12 [sudo] password for avinh: . Is there anything we could verify with Anaconda? . when in anaconda, text should be prefixed with (base) | . . How would you update a repository? . pulling code | . git pull . Already up to date. . Really cool would be automating a procedure from installation. . automating the procedure for installing? Michaels already doing that XDD | ill give it a try later | .",
             "url": "https://slimeyturtles.github.io/VSCODE/week1/4",
@@ -221,7 +254,7 @@
     
   
     
-        ,"post20": {
+        ,"post23": {
             "title": "1.3 Code.org",
             "content": ".",
             "url": "https://slimeyturtles.github.io/VSCODE/week1/3",
@@ -232,7 +265,7 @@
     
   
     
-        ,"post21": {
+        ,"post24": {
             "title": "1.2 Primitives",
             "content": "Notes . primitive datatypes are lowercase and include boolean, char, ints, and floats | nonprimitive data starts with caps and includes Strings and Arrays | nonprimitives are caps bec they are classes and have methods | java needs variables to be declared so that it can be compiled | javac is java&#39;s compiler and lets it run more efficiently because it only needs to be compiled once, while python needs to compile every time it is run | . Hacks . ill do it later its not due rn .",
             "url": "https://slimeyturtles.github.io/VSCODE/week1/2",
@@ -243,7 +276,7 @@
     
   
     
-        ,"post22": {
+        ,"post25": {
             "title": "Week 1 Overview (2.7/3)",
             "content": "MyConnect Requirements . Code.org up to lesson 5 | . . Primitives Jupyter Notebook | Bash Jupyter Notebook | Fastpages Jupyter Notebook | . Hacks . 1. Innovation (no hack) . 2. Primitives . 3. Code.org . 4. Bash and Checks . 5. Fastpages .",
             "url": "https://slimeyturtles.github.io/VSCODE/week1/0",
@@ -254,7 +287,7 @@
     
   
     
-        ,"post23": {
+        ,"post26": {
             "title": "Python Hello World",
             "content": "print(&quot;Hello World&quot;) . Hello World .",
             "url": "https://slimeyturtles.github.io/VSCODE/week0/hello-world-Python",
@@ -265,7 +298,7 @@
     
   
     
-        ,"post24": {
+        ,"post27": {
             "title": "Java Hello World",
             "content": "static class Main { public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } Main.main(null); . Hello World! .",
             "url": "https://slimeyturtles.github.io/VSCODE/week0/hello-world-Java",
@@ -276,7 +309,7 @@
     
   
     
-        ,"post25": {
+        ,"post28": {
             "title": "0.4 Tools Setup",
             "content": "Link to personal fastpages | Link to new post | Hello World Python | Hello World Java | SC of Fastpages on IDE | . . SC of Java project running | . . GitHub Insights | .",
             "url": "https://slimeyturtles.github.io/VSCODE/week0/4",
@@ -287,7 +320,7 @@
     
   
     
-        ,"post26": {
+        ,"post29": {
             "title": "0.3 Anatomy of Java Hacks",
             "content": "ill do it later .",
             "url": "https://slimeyturtles.github.io/VSCODE/week0/3",
@@ -298,7 +331,7 @@
     
   
     
-        ,"post27": {
+        ,"post30": {
             "title": "0.1 Intro EC",
             "content": "not done .",
             "url": "https://slimeyturtles.github.io/VSCODE/week0/1",
@@ -309,7 +342,7 @@
     
   
     
-        ,"post28": {
+        ,"post31": {
             "title": "Week 0 Overview",
             "content": "MyConnect Requirements . Review Ticket (this is it) | GH Pages running (you are on it rn) | Java Application running | . . Hacks . 1. Introduction EC . 2. Scoring Requirements (no hack) . 3. Anatomy of Java Hacks . 4. Tools and Equipment Hacks .",
             "url": "https://slimeyturtles.github.io/VSCODE/week0/0",
@@ -320,7 +353,7 @@
     
   
     
-        ,"post29": {
+        ,"post32": {
             "title": "Fastpages Notebook Blog Post",
             "content": "About . This notebook is a demonstration of some of capabilities of fastpages with notebooks. . With fastpages you can save your jupyter notebooks into the _notebooks folder at the root of your repository, and they will be automatically be converted to Jekyll compliant blog posts! . Front Matter . The first cell in your Jupyter Notebook or markdown blog post contains front matter. Front matter is metadata that can turn on/off options in your Notebook. It is formatted like this: . # &quot;My Title&quot; &gt; &quot;Awesome summary&quot; - toc:true- branch: master - badges: true - comments: true - author: Hamel Husain &amp; Jeremy Howard - categories: [fastpages, jupyter] . Setting toc: true will automatically generate a table of contents | Setting badges: true will automatically include GitHub and Google Colab links to your notebook. | Setting comments: true will enable commenting on your blog post, powered by utterances. | . The title and description need to be enclosed in double quotes only if they include special characters such as a colon. More details and options for front matter can be viewed on the front matter section of the README. . Markdown Shortcuts . A #hide comment at the top of any code cell will hide both the input and output of that cell in your blog post. . A #hide_input comment at the top of any code cell will only hide the input of that cell. . The comment #hide_input was used to hide the code that produced this. . put a #collapse-hide flag at the top of any cell if you want to hide that cell by default, but give the reader the option to show it: . import pandas as pd import altair as alt . . put a #collapse-show flag at the top of any cell if you want to show that cell by default, but give the reader the option to hide it: . cars = &#39;https://vega.github.io/vega-datasets/data/cars.json&#39; movies = &#39;https://vega.github.io/vega-datasets/data/movies.json&#39; sp500 = &#39;https://vega.github.io/vega-datasets/data/sp500.csv&#39; stocks = &#39;https://vega.github.io/vega-datasets/data/stocks.csv&#39; flights = &#39;https://vega.github.io/vega-datasets/data/flights-5k.json&#39; . . place a #collapse-output flag at the top of any cell if you want to put the output under a collapsable element that is closed by default, but give the reader the option to open it: . print(&#39;The comment #collapse-output was used to collapse the output of this cell by default but you can expand it.&#39;) . The comment #collapse-output was used to collapse the output of this cell by default but you can expand it. . . Interactive Charts With Altair . Charts made with Altair remain interactive. Example charts taken from this repo, specifically this notebook. . Example 1: DropDown . # use specific hard-wired values as the initial selected values selection = alt.selection_single( name=&#39;Select&#39;, fields=[&#39;Major_Genre&#39;, &#39;MPAA_Rating&#39;], init={&#39;Major_Genre&#39;: &#39;Drama&#39;, &#39;MPAA_Rating&#39;: &#39;R&#39;}, bind={&#39;Major_Genre&#39;: alt.binding_select(options=genres), &#39;MPAA_Rating&#39;: alt.binding_radio(options=mpaa)} ) # scatter plot, modify opacity based on selection alt.Chart(df).mark_circle().add_selection( selection ).encode( x=&#39;Rotten_Tomatoes_Rating:Q&#39;, y=&#39;IMDB_Rating:Q&#39;, tooltip=&#39;Title:N&#39;, opacity=alt.condition(selection, alt.value(0.75), alt.value(0.05)) ) . Example 2: Tooltips . alt.Chart(df).mark_circle().add_selection( alt.selection_interval(bind=&#39;scales&#39;, encodings=[&#39;x&#39;]) ).encode( alt.X(&#39;Rotten_Tomatoes_Rating&#39;, type=&#39;quantitative&#39;), alt.Y(&#39;IMDB_Rating&#39;, type=&#39;quantitative&#39;, axis=alt.Axis(minExtent=30)), # y=alt.Y(&#39;IMDB_Rating:Q&#39;, ), # use min extent to stabilize axis title placement tooltip=[&#39;Title:N&#39;, &#39;Release_Date:N&#39;, &#39;IMDB_Rating:Q&#39;, &#39;Rotten_Tomatoes_Rating:Q&#39;] ).properties( width=500, height=400 ) . Example 3: More Tooltips . label = alt.selection_single( encodings=[&#39;x&#39;], # limit selection to x-axis value on=&#39;mouseover&#39;, # select on mouseover events nearest=True, # select data point nearest the cursor empty=&#39;none&#39; # empty selection includes no data points ) # define our base line chart of stock prices base = alt.Chart().mark_line().encode( alt.X(&#39;date:T&#39;), alt.Y(&#39;price:Q&#39;, scale=alt.Scale(type=&#39;log&#39;)), alt.Color(&#39;symbol:N&#39;) ) alt.layer( base, # base line chart # add a rule mark to serve as a guide line alt.Chart().mark_rule(color=&#39;#aaa&#39;).encode( x=&#39;date:T&#39; ).transform_filter(label), # add circle marks for selected time points, hide unselected points base.mark_circle().encode( opacity=alt.condition(label, alt.value(1), alt.value(0)) ).add_selection(label), # add white stroked text to provide a legible background for labels base.mark_text(align=&#39;left&#39;, dx=5, dy=-5, stroke=&#39;white&#39;, strokeWidth=2).encode( text=&#39;price:Q&#39; ).transform_filter(label), # add text labels for stock prices base.mark_text(align=&#39;left&#39;, dx=5, dy=-5).encode( text=&#39;price:Q&#39; ).transform_filter(label), data=stocks ).properties( width=500, height=400 ) . Data Tables . You can display tables per the usual way in your blog: . df[[&#39;Title&#39;, &#39;Worldwide_Gross&#39;, &#39;Production_Budget&#39;, &#39;Distributor&#39;, &#39;MPAA_Rating&#39;, &#39;IMDB_Rating&#39;, &#39;Rotten_Tomatoes_Rating&#39;]].head() . Title Worldwide_Gross Production_Budget Distributor MPAA_Rating IMDB_Rating Rotten_Tomatoes_Rating . 0 The Land Girls | 146083.0 | 8000000.0 | Gramercy | R | 6.1 | NaN | . 1 First Love, Last Rites | 10876.0 | 300000.0 | Strand | R | 6.9 | NaN | . 2 I Married a Strange Person | 203134.0 | 250000.0 | Lionsgate | None | 6.8 | NaN | . 3 Let&#39;s Talk About Sex | 373615.0 | 300000.0 | Fine Line | None | NaN | 13.0 | . 4 Slam | 1087521.0 | 1000000.0 | Trimark | R | 3.4 | 62.0 | . Images . Local Images . You can reference local images and they will be copied and rendered on your blog automatically. You can include these with the following markdown syntax: . ![](my_icons/fastai_logo.png) . . Remote Images . Remote images can be included with the following markdown syntax: . ![](https://image.flaticon.com/icons/svg/36/36686.svg) . . Animated Gifs . Animated Gifs work, too! . ![](https://upload.wikimedia.org/wikipedia/commons/7/71/ChessPawnSpecialMoves.gif) . . Captions . You can include captions with markdown images like this: . ![](https://www.fast.ai/images/fastai_paper/show_batch.png &quot;Credit: https://www.fast.ai/2020/02/13/fastai-A-Layered-API-for-Deep-Learning/&quot;) . . Other Elements . GitHub Flavored Emojis . Typing I give this post two :+1:! will render this: . I give this post two :+1:! . Tweetcards . Typing &gt; twitter: https://twitter.com/jakevdp/status/1204765621767901185?s=20 will render this: Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 . Youtube Videos . Typing &gt; youtube: https://youtu.be/XfoYk_Z5AkI will render this: . Boxes / Callouts . Typing &gt; Warning: There will be no second warning! will render this: . Warning: There will be no second warning! . Typing &gt; Important: Pay attention! It&#39;s important. will render this: . Important: Pay attention! It&#8217;s important. . Typing &gt; Tip: This is my tip. will render this: . Tip: This is my tip. . Typing &gt; Note: Take note of this. will render this: . Note: Take note of this. . Typing &gt; Note: A doc link to [an example website: fast.ai](https://www.fast.ai/) should also work fine. will render in the docs: . Note: A doc link to an example website: fast.ai should also work fine. . Footnotes . You can have footnotes in notebooks, however the syntax is different compared to markdown documents. This guide provides more detail about this syntax, which looks like this: . For example, here is a footnote {% fn 1 %}. And another {% fn 2 %} {{ &#39;This is the footnote.&#39; | fndetail: 1 }} {{ &#39;This is the other footnote. You can even have a [link](www.github.com)!&#39; | fndetail: 2 }} . For example, here is a footnote 1. . And another 2 . 1. This is the footnote.↩ . 2. This is the other footnote. You can even have a link!↩ .",
             "url": "https://slimeyturtles.github.io/VSCODE/jupyter/2020/02/20/test.html",
@@ -366,10 +399,12 @@
   
 
   
+
+  
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://slimeyturtles.github.io/VSCODE/robots.txt",
