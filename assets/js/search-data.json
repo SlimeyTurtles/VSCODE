@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "5.1 Fibonacci",
-            "content": "",
+            "content": "For Loop . public class ForLoop { public static void main(int index) { int a = 0; int b = 1; int c; for (int i = 0; i &lt; index; i++) { c = a + b; System.out.println(&quot;&quot; + a + &quot; + &quot; b + &quot; = &quot; c); a = b; b = c; } } } ForLoop.main(6); . | System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; c); &#39;)&#39; expected | System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; c); not a statement | System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; c); &#39;;&#39; expected | System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; c); not a statement | System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; c); &#39;;&#39; expected . While Loop . Recursion . CollegeBoard Requirements . Skill 1.B:Determine code that would be used to complete code segments (ie For, While, Recursion) . I created functions that use For, While, and Recursion loops . Skill 4.C: Determine if two or more code segments yield equivalent results (be sure to Discuss how you know results are the same) . Yes because the outputs are the same and I can see that visually. I also could plug both function outputs into a function to determine if theyre equivalent. . Skill 5.A: Describe the behavior of a given segment of program code (describe the difference in recursion versus for &amp; while loops, perhaps add timing to determine speed) . I put comments in my code to describe it .",
             "url": "https://slimeyturtles.github.io/VSCODE/week5/1",
             "relUrl": "/week5/1",
             "date": " • Sep 20, 2022"

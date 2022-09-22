@@ -135,6 +135,107 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="For-Loop">For Loop<a class="anchor-link" href="#For-Loop"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ForLoop</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+        
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">index</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="n">b</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="n">c</span><span class="p">);</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ForLoop</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34;</span><span class="ansi-black-intense-fg ansi-bold"> b + &#34; = &#34; c);</span>
+<span class="ansi-red-intense-fg ansi-bold">&#39;)&#39; expected</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34; </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">b + &#34; = &#34;</span><span class="ansi-black-intense-fg ansi-bold"> c);</span>
+<span class="ansi-red-intense-fg ansi-bold">not a statement</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34;</span><span class="ansi-black-intense-fg ansi-bold"> c);</span>
+<span class="ansi-red-intense-fg ansi-bold">&#39;;&#39; expected</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">c</span><span class="ansi-black-intense-fg ansi-bold">);</span>
+<span class="ansi-red-intense-fg ansi-bold">not a statement</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; c</span><span class="ansi-black-intense-fg ansi-bold">);</span>
+<span class="ansi-red-intense-fg ansi-bold">&#39;;&#39; expected</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="While-Loop">While Loop<a class="anchor-link" href="#While-Loop"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Recursion">Recursion<a class="anchor-link" href="#Recursion"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="CollegeBoard-Requirements">CollegeBoard Requirements<a class="anchor-link" href="#CollegeBoard-Requirements"> </a></h3>
+<pre><code>Skill 1.B:Determine code that would be used to complete code segments (ie For, While, Recursion)
+
+</code></pre>
+<p>I created functions that use For, While, and Recursion loops</p>
+
+<pre><code>Skill 4.C: Determine if two or more code segments yield equivalent results (be sure to Discuss how you know results are the same)
+
+</code></pre>
+<p>Yes because the outputs are the same and I can see that visually. I also could plug both function outputs into a function to determine if theyre equivalent.</p>
+
+<pre><code>Skill 5.A: Describe the behavior of a given segment of program code (describe the difference in recursion versus for &amp; while loops, perhaps add timing to determine speed)
+
+</code></pre>
+<p>I put comments in my code to describe it</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
