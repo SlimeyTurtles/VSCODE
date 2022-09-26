@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -156,16 +156,25 @@ window.onload = wrap_img;
         <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
         <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
         
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Fibonacci For Loop&quot;</span><span class="p">);</span>
+
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">index</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="n">b</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="n">c</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">c</span><span class="p">);</span>
             <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
             <span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
+<span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
 <span class="n">ForLoop</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+<span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+
+<span class="kt">long</span> <span class="n">duration</span> <span class="o">=</span> <span class="p">(</span><span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">);</span>
+<span class="kt">double</span> <span class="n">seconds</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">duration</span><span class="o">/</span><span class="mi">1000000000</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This task took: &quot;</span> <span class="o">+</span> <span class="n">seconds</span> <span class="o">+</span> <span class="s">&quot; seconds&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -177,22 +186,15 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34;</span><span class="ansi-black-intense-fg ansi-bold"> b + &#34; = &#34; c);</span>
-<span class="ansi-red-intense-fg ansi-bold">&#39;)&#39; expected</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34; </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">b + &#34; = &#34;</span><span class="ansi-black-intense-fg ansi-bold"> c);</span>
-<span class="ansi-red-intense-fg ansi-bold">not a statement</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34;</span><span class="ansi-black-intense-fg ansi-bold"> c);</span>
-<span class="ansi-red-intense-fg ansi-bold">&#39;;&#39; expected</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">c</span><span class="ansi-black-intense-fg ansi-bold">);</span>
-<span class="ansi-red-intense-fg ansi-bold">not a statement</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            System.out.println(&#34;&#34; + a + &#34; + &#34; b + &#34; = &#34; c</span><span class="ansi-black-intense-fg ansi-bold">);</span>
-<span class="ansi-red-intense-fg ansi-bold">&#39;;&#39; expected</span>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Fibonacci For Loop
+0 + 1 = 1
+1 + 1 = 2
+1 + 2 = 3
+2 + 3 = 5
+3 + 5 = 8
+5 + 8 = 13
+This task took: 0.020585937 seconds
 </pre>
 </div>
 </div>
@@ -209,12 +211,140 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">WhileLoop</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Fibonacci While Loop&quot;</span><span class="p">);</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">c</span><span class="p">);</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+            <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+<span class="n">WhileLoop</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+<span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+
+<span class="kt">long</span> <span class="n">duration</span> <span class="o">=</span> <span class="p">(</span><span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">);</span>
+<span class="kt">double</span> <span class="n">seconds</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">duration</span><span class="o">/</span><span class="mi">1000000000</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This task took: &quot;</span> <span class="o">+</span> <span class="n">seconds</span> <span class="o">+</span> <span class="s">&quot; seconds&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Fibonacci While Loop
+0 + 1 = 1
+1 + 1 = 2
+1 + 2 = 3
+2 + 3 = 5
+3 + 5 = 8
+5 + 8 = 13
+This task took: 0.019449162 seconds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Recursion">Recursion<a class="anchor-link" href="#Recursion"> </a></h3>
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">RecursiveLoop</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">c</span><span class="p">);</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+            <span class="n">index</span><span class="o">--</span><span class="p">;</span>
+            <span class="n">RecursiveLoop</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">index</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+<span class="n">RecursiveLoop</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+
+<span class="kt">long</span> <span class="n">duration</span> <span class="o">=</span> <span class="p">(</span><span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">);</span>
+<span class="kt">double</span> <span class="n">seconds</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">duration</span><span class="o">/</span><span class="mi">1000000000</span><span class="p">;</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This task took: &quot;</span> <span class="o">+</span> <span class="n">seconds</span> <span class="o">+</span> <span class="s">&quot; seconds&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0 + 1 = 1
+1 + 1 = 2
+1 + 2 = 3
+2 + 3 = 5
+3 + 5 = 8
+5 + 8 = 13
+This task took: 0.018451155 seconds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="CollegeBoard-Requirements">CollegeBoard Requirements<a class="anchor-link" href="#CollegeBoard-Requirements"> </a></h3>
@@ -231,7 +361,7 @@ window.onload = wrap_img;
 <pre><code>Skill 5.A: Describe the behavior of a given segment of program code (describe the difference in recursion versus for &amp; while loops, perhaps add timing to determine speed)
 
 </code></pre>
-<p>I put comments in my code to describe it</p>
+<p>Theres a timer</p>
 
 </div>
 </div>
