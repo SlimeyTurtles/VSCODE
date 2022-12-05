@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      9 min read
     
 </span></p>
 
@@ -482,31 +482,910 @@ test2
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">==</span><span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;test1&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">==</span><span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;test2&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">int </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">x = 6</span><span class="ansi-black-intense-fg ansi-bold">;</span>
+<span class="ansi-red-intense-fg ansi-bold">incompatible types: int cannot be converted to Object</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Comparing Strings: String.equals(otherString);</li>
+<li>Comparing Strings: String.equals(otherString); equals compares the values and == compares the datatype, so obj.getVal() == obj2.getVal will return false, but .equals will return true</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">test</span> <span class="p">{</span>
+    <span class="kd">static</span> <span class="n">String</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span><span class="p">;</span>
+    <span class="kd">static</span> <span class="n">String</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        
+        <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">y</span><span class="p">))</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;test2&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    
+        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;test1&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>test2
+test1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>Comparing objects: Object.equals(otherObject);</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Object</span> <span class="p">{</span>
+    
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">value</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Object</span><span class="p">(</span><span class="n">String</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">value</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getValue</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">value</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Object</span> <span class="n">obj1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
+<span class="n">Object</span> <span class="n">obj2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">obj1</span><span class="p">.</span><span class="na">getValue</span><span class="p">()</span> <span class="o">==</span> <span class="n">obj2</span><span class="p">.</span><span class="na">getValue</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;test1&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">obj1</span><span class="p">.</span><span class="na">getValue</span><span class="p">().</span><span class="na">equals</span><span class="p">(</span><span class="n">obj2</span><span class="p">.</span><span class="na">getValue</span><span class="p">()))</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;test2&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>test1
+test2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>For loop: for (int i = 5; i &gt;0; i--) {} use this for when you need to count by more than one or its not in a list</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+3
+4
+5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>Enhanced for loop: for (int i : arr) {} use this when you need to perform a method on each item in an arrayList</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+        <span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+
+        <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">:</span> <span class="n">list</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="n">i</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">count</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>6
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>While loop vs Do while loop: while loop runs while a conditions true, while do while loop runs once and then checks the condition</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
+        
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">x</span> <span class="o">/=</span> <span class="mi">2</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">x</span><span class="o">!=</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>13
+40
+20
+10
+5
+16
+8
+4
+2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>Nested loop: used when you want to search a multidimensional arraylist (2d 3d Array etc)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">array</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="s">&quot;brook&quot;</span><span class="p">,</span> <span class="s">&quot;bknight&quot;</span><span class="p">,</span> <span class="s">&quot;bbishop&quot;</span><span class="p">,</span> <span class="s">&quot;bqueen&quot;</span><span class="p">,</span> <span class="s">&quot;bking&quot;</span><span class="p">,</span> <span class="s">&quot;bbishop&quot;</span><span class="p">,</span> <span class="s">&quot;bknight&quot;</span><span class="p">,</span> <span class="s">&quot;brook&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;bpawn&quot;</span><span class="p">,</span> <span class="s">&quot;bpawn&quot;</span><span class="p">,</span> <span class="s">&quot;bpawn&quot;</span><span class="p">,</span> <span class="s">&quot;bpawn&quot;</span><span class="p">,</span> <span class="s">&quot;bpawn&quot;</span><span class="p">,</span> <span class="s">&quot;bpawn&quot;</span><span class="p">,</span> <span class="s">&quot;bpawn&quot;</span><span class="p">,</span> <span class="s">&quot;bpawn&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;wpawn&quot;</span><span class="p">,</span> <span class="s">&quot;wpawn&quot;</span><span class="p">,</span> <span class="s">&quot;wpawn&quot;</span><span class="p">,</span> <span class="s">&quot;wpawn&quot;</span><span class="p">,</span> <span class="s">&quot;wpawn&quot;</span><span class="p">,</span> <span class="s">&quot;wpawn&quot;</span><span class="p">,</span> <span class="s">&quot;wpawn&quot;</span><span class="p">,</span> <span class="s">&quot;wpawn&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;wrook&quot;</span><span class="p">,</span> <span class="s">&quot;wknight&quot;</span><span class="p">,</span> <span class="s">&quot;wbishop&quot;</span><span class="p">,</span> <span class="s">&quot;wqueen&quot;</span><span class="p">,</span> <span class="s">&quot;wking&quot;</span><span class="p">,</span> <span class="s">&quot;wbishop&quot;</span><span class="p">,</span> <span class="s">&quot;wknight&quot;</span><span class="p">,</span> <span class="s">&quot;wrook&quot;</span><span class="p">}</span>
+            <span class="p">};</span>
+        
+        <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">row</span> <span class="p">:</span> <span class="n">array</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">piece</span> <span class="p">:</span> <span class="n">row</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">piece</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;bpawn&quot;</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">count</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>8
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>Creating a class: public class Class {} should have a constructor and can have a 1 arguement constructor or multiple arguement constructor. Name of class should be caps and the name of the file.</li>
 <li>Constructor: allocates parameters to the methods private variables. Can be a no arguement constructor, multi arguement constructor, or all arg constructor</li>
 <li>Accesor method: example is a getter. returns a variable type. Just returns this.var() so you can access a private variable for a specific object</li>
 <li>Mutator method: Updates a variable inside of the object. Doesnt have to return something in which it would be void.</li>
+<li>Overloading a method: it lets you pass different combinations of parameters</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Piece</span> <span class="p">{</span>    <span class="c1">// this is a class</span>
+
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">type</span><span class="p">;</span>
+
+    <span class="c1">// Overloading a method except this method is a constructor but does the same thing</span>
+    <span class="kd">public</span> <span class="nf">Piece</span><span class="p">()</span> <span class="p">{</span>    <span class="c1">// this is a no arg constructor</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">type</span> <span class="o">=</span> <span class="s">&quot;piece default&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">Piece</span><span class="p">(</span><span class="n">String</span> <span class="n">type</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// this is a arg constructor</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">type</span> <span class="o">=</span> <span class="n">type</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getType</span><span class="p">()</span> <span class="p">{</span>   <span class="c1">// this is a accesor method</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">type</span><span class="p">;</span>
+    <span class="p">}</span>  
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">getTypeToString</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getType</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setType</span><span class="p">(</span><span class="n">String</span> <span class="n">type</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// this is a mutator method</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">type</span> <span class="o">=</span> <span class="n">type</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        
+        <span class="n">Piece</span> <span class="n">thing1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Piece</span><span class="p">();</span>
+        <span class="n">Piece</span> <span class="n">thing2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Piece</span><span class="p">(</span><span class="s">&quot;piece 2&quot;</span><span class="p">);</span>
+
+        <span class="n">thing1</span><span class="p">.</span><span class="na">getTypeToString</span><span class="p">();</span>
+        <span class="n">thing2</span><span class="p">.</span><span class="na">getTypeToString</span><span class="p">();</span>
+
+        <span class="n">thing1</span><span class="p">.</span><span class="na">setType</span><span class="p">(</span><span class="s">&quot;updated type&quot;</span><span class="p">);</span>
+        <span class="n">thing1</span><span class="p">.</span><span class="na">getTypeToString</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Piece</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>piece default
+piece 2
+updated type
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>Static variable is a variable that does not update (you can use final). Class variable is a variable somethig that can be accessed from in and out of the class. private is for something that can only be used by the object. Protectdd is like public but it cant be accessed outside of the package</li>
 <li>Static is for methods that belong to the whole class instead of just one object.</li>
 <li>this: this is used to call specific variables of an object (this.variable)</li>
 <li>main method: This is typically used as a tester method to test all of the variables and functions work in a POJO. It lets you test your code even if it depends on other files to work</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Budget</span> <span class="p">{</span>
+
+    <span class="c1">// static variable</span>
+    <span class="kd">static</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">months</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span>
+        <span class="s">&quot;january&quot;</span><span class="p">,</span>
+        <span class="s">&quot;february&quot;</span><span class="p">,</span>
+        <span class="s">&quot;march&quot;</span><span class="p">,</span>
+        <span class="s">&quot;april&quot;</span><span class="p">,</span>
+        <span class="s">&quot;may&quot;</span><span class="p">,</span>
+        <span class="s">&quot;june&quot;</span><span class="p">,</span>
+        <span class="s">&quot;july&quot;</span><span class="p">,</span>
+        <span class="s">&quot;august&quot;</span><span class="p">,</span>
+        <span class="s">&quot;september&quot;</span><span class="p">,</span>
+        <span class="s">&quot;october&quot;</span><span class="p">,</span>
+        <span class="s">&quot;november&quot;</span><span class="p">,</span>
+        <span class="s">&quot;december&quot;</span>
+    <span class="p">));</span>
+
+    <span class="kd">private</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">monthlyExpenses</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">monthlyBudget</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Budget</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">monthlyExpenses</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">monthlyBudget</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setMonthlyExpenses</span><span class="p">()</span> <span class="p">{</span>
+
+        <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">month</span> <span class="p">:</span> <span class="n">months</span><span class="p">)</span> <span class="p">{</span>
+        
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter the monthly expenses for &quot;</span> <span class="o">+</span> <span class="n">month</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span><span class="p">);</span>
+            <span class="n">String</span> <span class="n">input</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">monthlyExpenses</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">input</span><span class="p">));</span>
+
+        <span class="p">}</span>
+
+        
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setMonthlyBudget</span><span class="p">()</span> <span class="p">{</span>
+     
+        <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">month</span> <span class="p">:</span> <span class="n">months</span><span class="p">)</span> <span class="p">{</span>
+        
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter the monthly budget for &quot;</span> <span class="o">+</span> <span class="n">month</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span><span class="p">);</span>
+            <span class="n">String</span> <span class="n">input</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+            <span class="k">this</span><span class="p">.</span><span class="na">monthlyBudget</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">input</span><span class="p">));</span>
+
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">findDifference</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">month</span> <span class="p">:</span> <span class="n">months</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">sum</span> <span class="o">+=</span> <span class="n">monthlyBudget</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">month</span><span class="p">);</span>
+            <span class="n">sum</span> <span class="o">-=</span> <span class="n">monthlyExpenses</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">month</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">sum</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">findDifferenceToString</span><span class="p">()</span> <span class="p">{</span>  <span class="c1">// this keyword</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your difference is &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">findDifference</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="c1">// static method and also a main method</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Budget</span> <span class="n">budget</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Budget</span><span class="p">();</span>
+        <span class="n">budget</span><span class="p">.</span><span class="na">setMonthlyBudget</span><span class="p">();</span>
+        <span class="n">budget</span><span class="p">.</span><span class="na">setMonthlyExpenses</span><span class="p">();</span>
+        <span class="n">budget</span><span class="p">.</span><span class="na">findDifferenceToString</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Budget</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>Inheritance: allows you to extend one java file and its methods and variables into another and save code (ie flower extends plant because a flower has all the attributes of a plant)</li>
 <li>subclass construcor: instead of instantiating as this.var = var set it as super(var)</li>
-<li>Overloading a method: it lets you pass different combinations of parameters</li>
 <li>overriding a method: overrides an inherited method so that it does something else</li>
-<li>Abstract class &amp; method: a class that cant create objects but can only be extended. The method can also not be used but only extended</li>
-<li>Standard method: toString() parses something into a string, equals() compares the values of two things, and hashCode() hashes something and encrypts it</li>
-<li>Late binding of object: Used to instantiate an object when the type of that object is unknown</li>
 <li>Polymorphism: allows you to implement the smae method in different ways by overloading, overriding, or latebinding</li>
+<li>Abstract class &amp; method: a class that cant create objects but can only be extended. The method can also not be used but only extended</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// abstract class</span>
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">height</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Animal</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">height</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">height</span> <span class="o">=</span> <span class="n">height</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">bite</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;nom!&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Inheritance</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">speed</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Dog</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">height</span><span class="p">,</span> <span class="kt">int</span> <span class="n">speed</span><span class="p">)</span> <span class="p">{</span>
+        
+        <span class="c1">// Subclass constructor</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">height</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">speed</span> <span class="o">=</span> <span class="n">speed</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">bark</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;woof!&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Overriding a method</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">bite</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;chomp!&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Animal</span> <span class="n">dog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="p">(</span><span class="s">&quot;todd&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">12</span><span class="p">);</span>
+        <span class="n">dog</span><span class="p">.</span><span class="na">bite</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">dog</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span>
+        <span class="n">dog</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Dog</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">// Inheritance</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">public class Dog extends Animal {</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    private int speed;</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public Dog(String name, int height, int speed) {</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        </span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        // Subclass constructor</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        super(name, height);</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        this.speed = speed;</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    }</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public void bark() {</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        System.out.println(&#34;woof!&#34;);</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    }</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    // Overriding a method</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    @Override</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public void bite() {</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        System.out.println(&#34;chomp!&#34;);</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    }</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public static void main(String[] args) {</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        Animal dog = new Dog(&#34;todd&#34;, 4, 12);</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        dog.bite();</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        System.out.println(dog.getName());</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        dog.bark();</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    }</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">}</span>
+<span class="ansi-red-intense-fg ansi-bold">Unresolved dependencies:</span>
+<span class="ansi-red-intense-fg ansi-bold">   - method bark()</span></pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Standard method: toString() parses something into a string, equals() compares the values of two things, and hashCode() hashes something and encrypts it</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">User</span> <span class="p">{</span>
+
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">hashedPassword</span><span class="p">;</span>
+    
+    <span class="kd">public</span> <span class="nf">User</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">hashedPassword</span> <span class="o">=</span> <span class="s">&quot;Passwordles&quot;</span><span class="p">.</span><span class="na">hashCode</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">User</span><span class="p">(</span><span class="n">String</span> <span class="n">password</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// hashed password never actually stores the real password</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">hashedPassword</span> <span class="o">=</span> <span class="n">password</span><span class="p">.</span><span class="na">hashCode</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">passwordChecker</span><span class="p">(</span><span class="n">String</span> <span class="n">guess</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="c1">// compares if two values are equal</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">hashedPassword</span><span class="p">.</span><span class="na">Equals</span><span class="p">(</span><span class="n">guess</span><span class="p">.</span><span class="na">hashCode</span><span class="p">()))</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// to string converts the results of a method into a string so it can be seen</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">passwordCheckerToString</span><span class="p">(</span><span class="kt">boolean</span> <span class="n">isCorrect</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">isCorrect</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The password is correct&quot;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The password is incorrect&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">User</span> <span class="n">user1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">User</span><span class="p">();</span>
+        <span class="n">user1</span><span class="p">.</span><span class="na">passwordCheckerToString</span><span class="p">(</span><span class="n">user1</span><span class="p">.</span><span class="na">passwordChecker</span><span class="p">(</span><span class="s">&quot;password&quot;</span><span class="p">));</span>
+        <span class="n">user1</span><span class="p">.</span><span class="na">passwordCheckerToString</span><span class="p">(</span><span class="n">user1</span><span class="p">.</span><span class="na">passwordChecker</span><span class="p">(</span><span class="s">&quot;Passwordles&quot;</span><span class="p">));</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="n">User</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The password is incorrect
+The password is correct
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Late binding of object: Used to instantiate an object when the type of that object is unknown</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bird</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Chicken</span> <span class="p">{</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        
+        <span class="n">Bird</span> <span class="n">object</span><span class="p">;</span>
+
+        <span class="c1">// late binding</span>
+        <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Chicken</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>Big O notation: Allows you to estimate how effective a segment of code is<ul>
 <li>Hashmap: O(1)</li>
 <li>Binary search: O(log N)</li>
