@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -912,13 +912,60 @@ integer is not in array
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Tree</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printTree</span><span class="p">(</span><span class="kt">int</span> <span class="n">length</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">spaces</span> <span class="o">=</span> <span class="n">length</span><span class="o">-</span><span class="n">row</span><span class="p">;</span> <span class="n">spaces</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="n">spaces</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">astericks</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">astericks</span> <span class="o">&lt;=</span> <span class="n">row</span><span class="p">;</span> <span class="n">astericks</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"* "</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">spaces</span> <span class="o">=</span> <span class="n">length</span><span class="o">-</span><span class="n">row</span><span class="p">;</span> <span class="n">spaces</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="n">spaces</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">trunkRows</span> <span class="o">=</span> <span class="n">length</span> <span class="o">/</span> <span class="mi">5</span><span class="p">;</span> <span class="n">trunkRows</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">trunkRows</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">spaces</span> <span class="o">=</span> <span class="n">length</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span> <span class="n">spaces</span> <span class="o">&gt;=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">spaces</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"||"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>   
+        <span class="p">}</span>
+    <span class="p">}</span>
+
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-        
+        <span class="n">printTree</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
+
+<span class="n">Tree</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>      *       
+     * *      
+    * * *     
+   * * * *    
+  * * * * *   
+ * * * * * *  
+     ||
+     ||
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
